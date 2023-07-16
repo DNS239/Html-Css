@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tag.</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: aquamarine;
+            margin: 0px;
+        }
+
+        header{
+            background-color: aquamarine;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1 {
+            box-shadow: inset -14px -10px 11px 0px;
+        }
+
+        nav {
+            background-color: rgb(230, 226, 212);
+            margin: 2px;
+            box-shadow: inset -2px -6px 6px 0px rgba(0, 0, 0, 0.486);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: green;
+            font-weight: bold;
+            
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        article {
+            background-color: rgb(149, 5, 168);
+
+        }
+
+        article > aside {
+            background-color: rgb(101, 9, 129);
+            padding: 5px;
+        }
+
+        main {
+            background-color: rgb(11, 172, 91);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: 17px 10px 6px 0px rgba(0, 0, 0, 0.486);
+    
+        }
+
+        footer {
+            background-color: rgb(146, 124, 51);
+            color: blueviolet;
+            text-align: center;
+            padding: 1px;
+            margin: 1px;
+        }
+
+        footer > p {
+            margin: 1px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Links.</a>
+            <a href="#">Links.</a>
+            <a href="#">Links.</a>
+            <a href="#">Links.</a>
+            <a href="#">Links.</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="assuntos">
+
+        </section>
+
+        <section id="Noticias">
+            <article>
+                <h2>Noticias sobre nada.</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error perspiciatis tempora quas nobis soluta numquam nihil ab quibusdam excepturi ad, doloremque laborum autem dicta eius dolores non sint inventore harum?</p>
+                <aside>
+                    <p>Artigo escrito por Dns.</p>
+                </aside>
+
+                <article>
+
+                </article>
+
+            </article>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Dns.</p>
+    </footer>
+</body>
+</html>

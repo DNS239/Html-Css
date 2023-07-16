@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links.</title>
+    <style>
+    /*    # = id
+          . = class
+          : = Pseudo-clases
+         :: = pseudo- elemento
+          > = Children
+    */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: green;
+        }
+
+        a::after{
+            content: "[link]";
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(7, 145, 145);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links.</h1>
+    <ul>
+        <li><a href="https://vimeo.com/835956727" target="_blank">Vimeo.</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">Youtube.</a></li>
+        <li><a href="https://www.twitch.tv/" target="_blank">Twitch.</a></li>
+        <li><a href="https://platform.openai.com/apps" target="_blank">openai.</a></li>
+    </ul>
+</body>
+</html>
