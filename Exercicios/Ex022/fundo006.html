@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo</title>
     <style>
         body {
             height: 100vh;
-            background-color: aquamarine;
+           /* background-color: aquamarine;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center, center;
-            background-repeat: repeat-y;
-            background-size: cover; /* contain*/
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            */
+            
+
+            /*
+            contain
+            Short-hand -- background
+            color > image > position > repeat > [size] > attachment
+            */
+
+            background: aquamarine url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
             border: 2px solid black;
             border-radius: 10px;
-            width: 400px;
+            max-width: 300px;
             background-color: blueviolet;
             margin: auto;
             padding: 10px;
