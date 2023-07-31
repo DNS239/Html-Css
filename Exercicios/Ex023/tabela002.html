@@ -6,7 +6,10 @@
     <title>Trabalhando com tabelas grandes.</title>
     <style>
         body {
+            height: 100vh;
             font-family: 'Courier New', Courier, monospace;
+            background: rgb(0, 140, 255) url('a0bbe05b6386428179edbe6ab29c97f839c050d5.png') center center no-repeat fixed;
+            
         }
 
         table {
@@ -17,7 +20,7 @@
         td, th {
             border: 2px solid black;
             padding: 10px;
-            
+            font-weight: bolder;
         }
 
         thead {
@@ -25,15 +28,23 @@
             color: blueviolet;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: antiquewhite;
+        }
+
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes.</h1>
     <table>
+        <caption>População das unidades Federativas.</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -91,7 +102,7 @@
             </tr>
         </tbody>
         <footer>
-            <th>Total de habitantates</th>
+            <th scope="row">Total de habitantates</th>
             <td>0000</td>
         </footer>
     </table>
