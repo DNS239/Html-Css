@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas.</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: antiquewhite;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Èxersicios de tabela.</h1>
+    <table>
+        <caption>Filmes favoritos</caption>
+        <thead>
+            <tr>
+                <th>Grupos</th>
+                <th>Nomes</th>
+                <th colspan="3">Filmes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="3">Mulheres</th>
+                <th>Ana Maria Santos</th>
+                <th>Vingadores</th>
+                <th>Rambo</th>
+                <th>Captan Marvel</th>
+            </tr>
+
+            <tr>
+                <th>Beatris Sousa</th>
+                <th>Loki</th>
+                <th>Invasão secreta</th>
+                <th>hulk</th>
+            </tr>
+
+            <tr>
+                <th>Claudia Melo</th>
+                <th>What´s if</th>
+                <th>Doutor Estranho</th>
+                <th>Feitiçeira Escarlate</th>
+            </tr>
+
+            <tr>
+                <th rowspan="3">Homens</th>
+                <th>Bruno Mendonça</th>
+                <th>Vingadores</th>
+                <th>Rambo</th>
+                <th>Captan Marvel</th>
+            </tr>
+
+            <tr>
+                <th>Dns</th>
+                <th>What´s if</th>
+                <th>Doutor Estranho</th>
+                <th>Feitiçeira Escarlate</th>
+            </tr>
+
+            <tr>
+                <th>Denis</th>
+                <th>What´s if</th>
+                <th>Doutor Estranho</th>
+                <th>Feitiçeira Escarlate</th>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>
