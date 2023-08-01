@@ -13,8 +13,9 @@
         }
 
         table {
-            width: 500px;
+            width: 600px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -23,8 +24,8 @@
             font-weight: bolder;
         }
 
-        thead {
-            background-color: aqua;
+        thead, tfoot {
+            background-color: rgb(138, 173, 10);
             color: blueviolet;
         }
 
@@ -32,8 +33,27 @@
             font-size: 1.5em;
             font-weight: bolder;
             padding: 10px;
-            background-color: antiquewhite;
+            background-color: rgb(187, 113, 17);
         }
+
+        thead > tr >th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(138, 173, 10);
+        }
+
+        tbody > tr:nth-child(odd) {/*(2n-1)*/
+            background-color: rgb(241, 238, 11);
+        }
+
+        tbody > tr:nth-child(even) {/*(2n)*/
+            background-color: rgb(92, 5, 114);
+        }
+
+        td.numero {
+            text-align: right;
+        }
+
 
     </style>
 </head>
@@ -44,67 +64,147 @@
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th scope="col" style="width: 50px;">População</th>
+                <th scope="col" style="width: 150px;">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São paulo</td>
-                <td>44 420 459</td>
+                <td class="numero">44 420 459</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>20 538 718</td>
+                <td class="numero">20 538 718</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>16 054 524</td>
+                <td class="numero">16 054 524</td>
             </tr>
             <tr>
                 <td>Párana</td>
-                <td>11 443 208</td>
+                <td class="numero">11 443 208</td>
             </tr>
             <tr>
                 <td>Rio Grande do Sul</td>
-                <td>10 880 506</td>
+                <td class="numero">10 880 506</td>
             </tr>
             <tr>
                 <td>Pernambuco</td>
-                <td>9 058 155</td>
+                <td class="numero">9 058 155</td>
             </tr>
             <tr>
                 <td>Ceará</td>
-                <td>8 791 688</td>
+                <td class="numero">8 791 688</td>
             </tr>
             <tr>
                 <td>Pára</td>
-                <td>8 116 132</td>
+                <td class="numero">8 116 132</td>
             </tr>
             <tr>
                 <td>Santa catarina</td>
-                <td>7 609 601</td>
+                <td class="numero">7 609 601</td>
             </tr>
             <tr>
                 <td>Goiás</td>
-                <td>7 055 228</td>
+                <td class="numero">7 055 228</td>
             </tr>
             <tr>
                 <td>Maranhão</td>
-                <td>6 775 152</td>
+                <td class="numero">6 775 152</td>
             </tr>
             <tr>
                 <td>Paraiba</td>
-                <td>3 974 495</td>
+                <td class="numero">3 974 495</td>
             </tr>
             <tr>
                 <td>Amazonas</td>
-                <td>3 941 175</td>
+                <td class="numero">3 941 175</td>
+            </tr>
+            <tr>
+                <td>Santa catarina</td>
+                <td class="numero">7 609 601</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="numero">7 055 228</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="numero">6 775 152</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="numero">3 974 495</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">3 941 175</td>
+            </tr>
+            <tr>
+                <td>Santa catarina</td>
+                <td class="numero">7 609 601</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="numero">7 055 228</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="numero">6 775 152</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="numero">3 974 495</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">3 941 175</td>
+            </tr>
+            <tr>
+                <td>Santa catarina</td>
+                <td class="numero">7 609 601</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="numero">7 055 228</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="numero">6 775 152</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="numero">3 974 495</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">3 941 175</td>
             </tr>
         </tbody>
-        <footer>
+        <tfoot>
             <th scope="row">Total de habitantates</th>
             <td>0000</td>
-        </footer>
+        </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic eius laborum, consequatur sapiente optio sit odio autem quis inventore, amet ratione. Unde officia tenetur iusto suscipit! Temporibus officiis sunt asperiores.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, amet! Aut illo quod quas ab vero consequuntur, id laborum at, maxime laudantium, quasi magni minima doloremque minus a fugiat fuga.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis non ipsum aperiam deleniti in dignissimos aliquam placeat minima, accusamus vel fuga error modi similique ea eos eaque, dolorem quisquam dicta?
+    </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic eius laborum, consequatur sapiente optio sit odio autem quis inventore, amet ratione. Unde officia tenetur iusto suscipit! Temporibus officiis sunt asperiores.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, amet! Aut illo quod quas ab vero consequuntur, id laborum at, maxime laudantium, quasi magni minima doloremque minus a fugiat fuga.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis non ipsum aperiam deleniti in dignissimos aliquam placeat minima, accusamus vel fuga error modi similique ea eos eaque, dolorem quisquam dicta?
+    </p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic eius laborum, consequatur sapiente optio sit odio autem quis inventore, amet ratione. Unde officia tenetur iusto suscipit! Temporibus officiis sunt asperiores.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, amet! Aut illo quod quas ab vero consequuntur, id laborum at, maxime laudantium, quasi magni minima doloremque minus a fugiat fuga.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis non ipsum aperiam deleniti in dignissimos aliquam placeat minima, accusamus vel fuga error modi similique ea eos eaque, dolorem quisquam dicta?
+    </p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic eius laborum, consequatur sapiente optio sit odio autem quis inventore, amet ratione. Unde officia tenetur iusto suscipit! Temporibus officiis sunt asperiores.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, amet! Aut illo quod quas ab vero consequuntur, id laborum at, maxime laudantium, quasi magni minima doloremque minus a fugiat fuga.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis non ipsum aperiam deleniti in dignissimos aliquam placeat minima, accusamus vel fuga error modi similique ea eos eaque, dolorem quisquam dicta?
+    </p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic eius laborum, consequatur sapiente optio sit odio autem quis inventore, amet ratione. Unde officia tenetur iusto suscipit! Temporibus officiis sunt asperiores.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, amet! Aut illo quod quas ab vero consequuntur, id laborum at, maxime laudantium, quasi magni minima doloremque minus a fugiat fuga.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis non ipsum aperiam deleniti in dignissimos aliquam placeat minima, accusamus vel fuga error modi similique ea eos eaque, dolorem quisquam dicta?
+    </p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic eius laborum, consequatur sapiente optio sit odio autem quis inventore, amet ratione. Unde officia tenetur iusto suscipit! Temporibus officiis sunt asperiores.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, amet! Aut illo quod quas ab vero consequuntur, id laborum at, maxime laudantium, quasi magni minima doloremque minus a fugiat fuga.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis non ipsum aperiam deleniti in dignissimos aliquam placeat minima, accusamus vel fuga error modi similique ea eos eaque, dolorem quisquam dicta?
+    </p>
 </body>
 </html>
