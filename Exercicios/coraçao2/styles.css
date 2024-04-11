@@ -1,0 +1,29 @@
+.heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+  }
+  
+  .left-half{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 183, 255, 0.664);
+  }
+  
+  .left-half {
+    clip-path: polygon(0% 0%, 50% 50%, 50% 100%);
+  }
+  
+  .right-half {
+    clip-path: polygon(100% 0, 50% 50%, 50% 100%);
+  }
+  
+
+  .right-half {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(72, 255, 0, 0.664);
+  }
+  
